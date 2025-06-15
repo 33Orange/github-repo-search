@@ -1,0 +1,68 @@
+$itemBorderRadius: 4px;
+$itemBorder: 1px solid var(--mantine-color-gray-4);
+
+.item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border: $itemBorder;
+    border-bottom: 0;
+    padding: 0.5rem;
+    
+    &:first-child {
+        border-top-left-radius: $itemBorderRadius;
+        border-top-right-radius: $itemBorderRadius;
+    }
+    
+    &:last-child {
+        border-bottom-left-radius: $itemBorderRadius;
+        border-bottom-right-radius: $itemBorderRadius;
+        border-bottom: $itemBorder;
+    }
+}
+
+.titleContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title {
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.starContainer {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.star {
+    min-width: 18px;
+}
+
+.countText {
+    font-size: 0.75rem;
+}
+
+.description {
+    font-size: 0.875rem;
+}
+
+.link {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+@media all and ( max-width: 524px ) {
+    .title {
+        font-size: 1rem;
+        word-break: break-all;
+    }
+}

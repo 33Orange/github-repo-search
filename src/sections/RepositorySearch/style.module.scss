@@ -1,0 +1,25 @@
+.section {
+    width: var(--container-width);
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    border: 1px solid #0f0f0f;
+}
+
+.title {
+    font-size: 1.875rem;
+    color: black;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 20px;
+}   
+
+.searchInput {
+    margin-bottom: 20px;
+}
+
+@media all and ( max-width: 524px ) {
+    .section {
+        padding: 8px;
+    }
+}

@@ -1,0 +1,62 @@
+.paginationBar {
+    margin: 1.5rem 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.prevButtons {
+    display: flex;
+    gap: 0.4rem;
+}
+
+
+.nextButtons {
+    display: flex;
+    gap: 0.4rem;
+}
+
+.items {
+    display: flex;
+    gap: 0.4rem;
+}
+
+@media all and ( max-width: 724px ) {
+    .mobileContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 0.4rem;
+    }
+    
+    .mobileItems {
+        display: flex;
+        gap: 0.4rem;
+        justify-content: space-between;
+    }
+    
+    .mobileButtons {
+        display: flex;
+        gap: 0.4rem;
+        align-self: flex-end;
+    }
+}
+
+
+@media all and ( max-width: 524px ) {    
+    .mobileItems {
+        display: flex;
+        gap: 0.4rem;
+        order: 0;
+    }
+    
+    .mobilePrevButtons {
+        order: 1;
+    }
+    
+    .mobileNextButtons {
+        order: 2;
+    }
+}

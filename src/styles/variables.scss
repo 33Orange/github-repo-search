@@ -1,0 +1,16 @@
+:root {
+    --container-width: #{700px};
+    --header-height: #{50px};
+}
+
+@media all and ( max-width: 724px ) {
+    :root {
+        --container-width: #{500px};
+    }
+}
+
+@media all and ( max-width: 524px ) {
+    :root {
+        --container-width: #{300px};
+    }
+}
